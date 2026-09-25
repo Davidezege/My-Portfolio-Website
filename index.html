@@ -3,233 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unya's Frontend Portfolio</title>
+    <meta name="description" content=" DEZBUILD : Unya David — FullStack web developer crafting fast, responsive and accessible digital experiences for brands and startups.">
+    <title>DEZBUILD : Unya David Portfolio</title>
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/714a67ea57.js" crossorigin="anonymous"></script>
     <script src="Scripts/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav class="nav-bar-con">
-            <div class="nb-left nb-space">
-                <img src="Pics_&_Icons/DEZ-Build-Logo-removebg-preview.png" alt="myportfolio_logo">
-            </div>
-            <div class="nb-center nb-space">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Project</li>
-                    <li>Blog</li>
-                </ul>
-            </div>
-            <div class="nb-right nb-space">
-                <div class="contact-button">
-                    <i class="fa-solid fa-phone"></i>
-                    Contact
-                </div>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" id="siteHeader">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a href="#home" class="brand">
+                <img src="Pics_&_Icons/DEZ-Build-Logo-removebg-preview.png" alt="DEZ Build logo">
+                <!-- <span class="brand-name">Unya<span class="accent">.David</span></span> -->
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link is-active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Services</a></li>
+                <li><a href="#work" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact Me
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="hero-section">
-            <div class="hs-left-con">
-                <h1>
-                    HELLO, I'M <img src="Pics_&_Icons/wave-icon.png" alt="wave_icon">
-                    <br>UNYA DAVID<br>
-                    <span id="curly_arrow">
-                        <img src="Pics_&_Icons/curly_arrow.png" alt="curly_arrow">
-                    </span>
-                </h1>
-                <span id="hs-text">
-                    I am a seasoned frontend web developer that focuses on building visually appealing and responsive websites for companies who need them.
-                </span>
-                <span class="hs-button">
-                    How I, Work
-                    <i  class="fa-solid fa-arrow-right"></i>
-                </span>
-            </div>
-            <div class="hs-right-con">
-                <img src="Pics_&_Icons/ChatGPT Image Feb 11, 2026, 06_46_31 PM.png" alt="David's_picture">
-            </div>
-        </section>
-        <section class="logo_container">
-            <!-- <marquee behavior="normal" direction="left"> -->
-                <div class="lc_spacing">DEZ Studios</div>
-                <div class="lc_spacing">Web Branding</div>
-                <div class="lc_spacing">DEZ-HUB</div>
-                <div class="lc_spacing">UMAE</div>
-                <div class="lc_spacing">The.Space</div>
-                <div class="lc_spacing">DEZ-Academy</div>
-                <div class="lc_spacing">DEZ-Seminar</div>
-                <!-- </marquee> -->
-        </section>
-        <section class="about-me" id="about">
-            <div class="about-me-lc">
-                <div class="about-me-top about-me-ltop">
-                    <span class="brown" id="five">5+</span> Years of Experience
-                </div>
-                <div class="about-me-lcenter">
-                    <img src="Pics_&_Icons/Me_looking_at_my_laptop.jpeg" alt="David_professional_pic">
-                </div>
-                <!-- <div class="about-me-lbottom">
-                    <img src="Pics_&_Icons/about-me-arrow.png" alt="about_me_arrow">
-                </div> -->
-            </div>
-            <div class="about-me-rc">
-                <div class="about-me1 about-me-top brown">About Me</div>
-                <div class="about-me2">"Crafting enjoyable <br> <span class="brown" id="digital">Digital</span> solutions from business ideas."</div>
-                <div class="about-me3">"I specialize in interface, digital products and user experience websites, focusing on building products, brands and websites."</div>
-                <div class="about-me4">
-                    <ul class="about-me-list">
-                        <li class="grid_list">  <i class="fa-solid fa-circle-arrow-right"></i>    Avoid These Mistakes</li>
-                        <li class="grid_list">  <i class="fa-solid fa-circle-arrow-right"></i>    Beyond The Norm</li>
-                        <li class="grid_list">  <i class="fa-solid fa-circle-arrow-right"></i>    Your New Venture</li>
-                        <li class="grid_list">  <i class="fa-solid fa-circle-arrow-right"></i>    Forge Destiny</li>
-                        <li class="grid_list">  <i class="fa-solid fa-circle-arrow-right"></i>    New Fonts</li>
-                        <li class="grid_list">  <i class="fa-solid fa-circle-arrow-right"></i>    Dare To Be Different</li>
+
+    <main id="main">
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="hero-badge">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        Available for Collaboration
+                    </p>
+                    <h1 class="hero-title">
+                        Hello, I'm <img class="wave" src="Pics_&_Icons/wave-icon.png" alt="waving hand">
+                        <span class="hero-name">Unya David</span>
+                        <span class="hero-role">FullStack <span class="accent gradient-text">Developer</span></span>
+                    </h1>
+                    <p class="hero-text">
+                        I build reliable, user-friendly web applications from the interface to the backend. I also enjoy turning complex ideas into simple, polished digital experiences.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#work" class="btn btn-primary">
+                            View My Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            Get In Touch
+                        </a>
+                    </div>
+                    <ul class="hero-stats">
+                        <li><strong>5+</strong><span>Years Experience</span></li>
+                        <li><strong>20+</strong><span>Projects Shipped</span></li>
+                        <li><strong>15+</strong><span>Happy Clients</span></li>
                     </ul>
                 </div>
-                <div class="about-me5">
-                    <i class="fa-solid fa-arrow-right"></i>  My CV
-                </div>
-            </div>
-        </section>
-        <section class="expert-areas">
-            <div class="ea-top">
-                <span class="ea-header">
-                    My Expert <div id="area">Areas</div>
-                </span>
-                “I am a software developer with a solid foundation in computer science fundamentals and practical experience building structured projects in web and systems programming.
-            </div>
-            <div class="ea-body">
-                <div class="ea-body-left ea-body-design">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Front-End Web Development</span>
-                    Skilled in building responsive and user-friendly web interfaces using modern frontend technologies. Focused on clean layouts, accessibility, and creating smooth user experiences that work across different devices and screen sizes.
-                </div>
-                <div class="ea-body-center ea-body-design">
-                    <i class="fa-solid fa-microchip"></i>
-                    <span>Systems Programming</span>
-                    Strong foundation in core computer science concepts, including data structures, algorithms, and problem-solving techniques understanding how software works at a low level to improve performance and scalability.
-                </div>
-                <div class="ea-body-right ea-body-design">
-                    <i class="fa-brands fa-react"></i>
-                    <span>Frameworks and Libraries</span>
-                    Familiar with React (JavaScript) for building interactive user interfaces and Bootstrap (CSS) for creating responsive and well-structured layouts efficiently.
-                </div>
-            </div>
-        </section>
-        <!-- <section class="project-container">
-            <div class="p-header">
-                <div class="p-top" id="my-portfolio">
-                    My Portfolio
-                </div>
-                <div class="p-top">
-                    Review my Latest projects
-                </div>
-            </div>
-            <div class="p-body">
-                
-            </div>
-        </section> -->
-        <section class="blog">
-            <div class="blog-header">
-                <div class="bh-left">Blog About My Personal Portfolio</div>
-                <div class="bh-right">
-                    My personal portfolio is a curated collection of my work, skills, and growth as a software developer with a strong foundation in computer science. It highlights my experience across computer science fundamentals, data structures and algorithms, frontend web development, and modern frontend frameworks, demonstrating both technical depth and practical problem-solving ability.
-                    The portfolio features projects that reflect my ability to apply data structures and algorithms to real problems, as well as my skill in building responsive, user-focused interfaces. Using tools like React for JavaScript and Bootstrap for CSS, I focus on creating clean, maintainable, and performance-driven frontend applications.
-                    Beyond code, this portfolio represents my commitment to continuous learning, attention to detail, and passion for building meaningful user experiences. It serves as both a professional profile for potential employers and a personal record of my growth as a developer.
-                </div>
-            </div>
-            <div class="blog-body">
-                <div class="bb-left">
-                    <img src="Pics_&_Icons/Finto-img.png" alt="Finto_Project">
-                    <div>Fintech Banking HomePage</div>
-                </div>
-                <div class="bb-right">
-                    <div class="bbd bb-flextop">
-                        <img src="Pics_&_Icons/systems-program-img.jpg" alt="Systems Programming">
-                        <div>Systems Programming</div>
-                    </div>
-                    <div class="bbd bb-flexbottom">
-                        <img src="Pics_&_Icons/Google Search Replica.png" alt="Google_Folder">
-                        <div>Google Folder</div>
+                <div class="hero-visual">
+                    <div class="hero-img-frame">
+                        <img src="Pics_&_Icons/ChatGPT Image Feb 11, 2026, 06_46_31 PM.png" alt="Portrait of Unya David">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact-me">
-            <div class="cm-left">
-                <div class="cml-top">CONTACT ME</div>
-                <div class="cml-body">
-                    <div class="cml-label address">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div class="cml-text">
-                            <span>Address</span>
-                            <address>Spella ICT Hub</address>
-                        </div>
+
+        <!-- ============ LOGO MARQUEE ============ -->
+        <section class="marquee" aria-label="Brands I have worked with">
+            <div class="marquee-track">
+                <span>DEZ Studios</span><span>WEB BRANDING</span><span>DEZ-HUB</span>
+                <span>DEZ-BUILD</span><span>DEZPACE</span><span>DEZ-Academy</span><span>DEZ-Seminar</span>
+                <span aria-hidden="true">DEZ Studios</span><span aria-hidden="true">WEB BRANDING</span>
+                <span aria-hidden="true">DEZ-HUB</span><span aria-hidden="true">DEZ-BUILD</span>
+                <span aria-hidden="true">DEZPACE</span><span aria-hidden="true">DEZ-Academy</span>
+                <span aria-hidden="true">DEZ-Seminar</span>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="about reveal" id="about">
+            <div class="container about-grid">
+                <div class="about-left">
+                    <div class="exp-card">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-label">Years of<br>Experience</span>
                     </div>
-                    <div class="cml-label phone-number">
-                        <i class="fa-solid fa-phone"></i>
-                        <div class="cml-text">
-                            <span>Phone Number</span>
-                            +234 9132226971
-                        </div>
-                    </div>
-                    <div class="cml-label mail">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div class="cml-text">
-                            <span>Email</span>
-                            unyadavideze@gmail.com
-                        </div>
-                    </div>
-                    <div class="cml-label website">
-                        <i class="fa-solid fa-globe"></i>
-                        <div class="cml-text">
-                            <span>Website</span>
-                            www.davidweb.com
-                        </div>
+                    <div class="about-img-frame">
+                        <img src="Pics_&_Icons/hero-pic-me.jpg" alt="Unya David working on his laptop">
                     </div>
                 </div>
-                <div class="cml-bottom">
-                    <span>My Social Media Platforms</span>
-                    <div class="socialmedialogo">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-x-twitter"></i>
-                        <i class="fa-brands fa-tiktok"></i>
-                    </div>
+                <div class="about-right">
+                    <p class="section-tag">About Me</p>
+                    <h2 class="section-title">Crafting enjoyable
+                        <span class="accent gradient-text">digital solutions</span> from business ideas.
+                    </h2>
+                    <p class="section-text">
+                        I specialize in optimization of digital products and building user-experience-focused
+                        webservices and applications — helping companies turn ideas into products, brands and
+                        experiences people actually enjoy using.
+                    </p>
+                    <ul class="about-points">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Clean, maintainable code</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Mobile-first responsive design</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Performance & accessibility</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Detail-driven UI polish</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">
+                        Download My CV <i class="fa-solid fa-download" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
-            <div class="cm-right">
-                <div class="cmr-head">Add Details</div>
-                <form action="#" method="#">
-                    <div class="enter enter-name">
-                        <label for="username">Name*</label>
-                        <input type="name" name="username" id="username" placeholder="Name" autocomplete="name" required>
+        </section>
+
+        <!-- ============ EXPERTISE ============ -->
+        <section class="expertise reveal" id="expertise">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-tag">Services</p>
+                    <h2 class="section-title">My <span class="accent gradient-text">Expertise</span></h2>
+                    <p class="section-text">
+                        A solid computer-science foundation combined with practical experience
+                        building structured, production-ready projects.
+                    </p>
+                </div>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                        <h3>Full-Stack Development</h3>
+                        <p>Built very secure, production-ready web apps including React/Tailwind frontends, Node/Express/MongoDB backends, with real-world payment (Paystack) and identity verification (Dojah KYC) integrations.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+                        <h3>Systems Programming</h3>
+                        <p>Strong fundamentals in data structures, algorithms and problem solving — understanding software at a low level to improve performance and scalability.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></div>
+                        <h3>Frameworks & Libraries</h3>
+                        <p>Interactive UIs with React and well-structured responsive layouts with Tailwind — built efficiently and ready to scale with your product.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ WORK ============ -->
+        <section class="work reveal" id="work">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-tag">Portfolio</p>
+                    <h2 class="section-title">Featured <span class="accent gradient-text">Projects</span></h2>
+                    <p class="section-text">
+                        A curated collection of my work — from optimized web applications to systems
+                        programming, built with performance and usability in mind.
+                    </p>
+                </div>
+                <div class="work-grid">
+                    <a href="http://su-youth-camp.netlify.app/" class="work-card work-card-lg">
+                        <img src="Pics_&_Icons/su-registration-app-image.png" alt="SU Youth Camp project screenshot">
+                        <div class="work-card-body">
+                            <div>
+                                <span class="work-tag">Web App</span>
+                                <h3>Highly Optimized Event Management System for SU, Nigeria</h3>
+                                <p>Engineered to handle high-volume participant onboarding with zero-conflict data integrity. Administrative tooling includes on-demand Excel report generation (SheetJS/xlsx) for real-time operational visibility, while the frontend layer implements optimized event-delegation patterns and multi-stage client-side validation to ensure data quality at the point of entry.</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Davidezege/MyCworkspace" target="_blank" class="work-card">
+                        <img src="Pics_&_Icons/systems-program-img.jpg" alt="Systems programming project screenshot">
+                        <div class="work-card-body">
+                            <div>
+                                <span class="work-tag">Low Level</span>
+                                <h3>Systems Programming</h3>
+                                <p>Core CS fundamentals applied to real, structured projects.</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="https://davidezege.github.io/FormFolder/" target="_blank" class="work-card">
+                        <img src="Pics_&_Icons/Google Search Replica.png" alt="Google search replica project screenshot">
+                        <div class="work-card-body">
+                            <div>
+                                <span class="work-tag">Search Engine Clone</span>
+                                <h3>Google Search Replica</h3>
+                                <p>Pixel-accurate recreation of the world's most famous search page. </p>
+                                <p>My First Project</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="contact reveal" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <p class="section-tag">Contact</p>
+                    <h2 class="section-title">Let's work <span class="accent gradient-text">together</span></h2>
+                    <p class="section-text">Have a project in mind? Send me a message and let's talk.</p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <div><span>Address</span><address>Spella ICT Hub</address></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <div><span>Phone</span><a href="tel:+2349132226971">+234 913 222 6971</a></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <div><span>Email</span><a href="mailto:unyadavideze@gmail.com">unyadavideze@gmail.com</a></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                            <div><span>My GitHub Profile</span><a href="https://github.com/Davidezege" target="_blank" rel="noopener noreferrer">github.com/Davidezege</a></div>
+                        </li>
+                    </ul>
+                    <div class="socials">
+                        <span>Follow me</span>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        </div>
                     </div>
-                    <div class="enter enter-email">
-                        <label for="email">Email*</label>
-                        <input type="email" id="email" placeholder="Email" autocomplete="email">
+                </div>
+                <form class="contact-form" action="#" method="post" novalidate>
+                    <h3>Send a message</h3>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="username">Name *</label>
+                            <input type="text" id="username" name="username" placeholder="Your full name" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                        </div>
                     </div>
-                    <div class="enter enter-tel">
-                        <label for="tel">Phonenumber</label>
-                        <input type="tel" id="tel" placeholder="Phonenumber" autocomplete="tel">
+                    <div class="field">
+                        <label for="tel">Phone (optional)</label>
+                        <input type="tel" id="tel" name="tel" placeholder="+234 ..." autocomplete="tel">
                     </div>
-                    <div class="enter enter-comment">
-                        <label for="text">Enter Comment</label>
-                        <input type="text" id="text" placeholder="Talk about what you want">
+                    <div class="field">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
                     </div>
-                    <div><button type="submit">Submit</button></div>
-                        
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                    </button>
                 </form>
             </div>
         </section>
     </main>
-    <footer></footer>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Unya David. Designed & built with <span class="accent">♥</span></p>
+            <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
